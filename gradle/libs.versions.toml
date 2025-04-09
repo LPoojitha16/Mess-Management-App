@@ -1,0 +1,38 @@
+[versions]
+# Existing versions
+androidx-core-ktx = "1.9.0"
+androidx-appcompat = "1.6.1"
+material = "1.9.0"
+androidx-activity = "1.7.0"
+androidx-constraintlayout = "2.1.4"
+junit = "4.13.2"
+androidx-junit = "1.1.5"
+androidx-espresso-core = "3.5.1"
+glide = "4.16.0"
+
+# Retrofit and OkHttp versions
+retrofit = "2.9.0"
+okhttp = "4.9.3"
+kotlinx-coroutines = "1.7.3" # Added this for Coroutines
+
+[libraries]
+# Existing libraries
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidx-core-ktx" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidx-appcompat" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+androidx-activity = { module = "androidx.activity:activity", version.ref = "androidx-activity" }
+androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "androidx-constraintlayout" }
+junit = { module = "junit:junit", version.ref = "junit" }
+androidx-junit = { module = "androidx.test.ext:junit", version.ref = "androidx-junit" }
+androidx-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "androidx-espresso-core" }
+
+# Retrofit and OkHttp libraries
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+okhttp-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttp" } # Added this
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" } # Added this
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+[plugins]
+android-application = { id = "com.android.application", version = "8.1.0" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version = "1.9.0" }
